@@ -1,0 +1,346 @@
+.pay-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.pay-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+
+.pay-summary-section,
+.pay-details-section {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.pay-summary-section:hover,
+.pay-details-section:hover {
+  transform: translateY(-2px);
+}
+
+.pay-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.pay-summary-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.pay-summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pay-summary-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pay-summary-item:last-child {
+  border-bottom: none;
+}
+
+.pay-summary-item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pay-summary-item-details {
+  flex: 1;
+}
+
+.pay-summary-item-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.pay-summary-item-info {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.pay-summary-item-prices {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.pay-summary-item-price,
+.pay-summary-item-price-discount {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.pay-summary-item-price-original {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.pay-summary-item-total {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+.pay-summary-total {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay-payment-methods {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pay-payment-method {
+  padding: 10px 20px;
+  background-color: #7f8db0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-payment-method:hover {
+  background-color: #445376;
+}
+
+.pay-methods {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pay-method {
+  background-color: #7f8db0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.pay-method.active {
+  background-color: #7f8db0;
+}
+
+.pay-method:hover {
+  background-color: #4b5878;
+}
+
+.pay-divider {
+  text-align: center;
+  color: #aaa;
+  margin: 20px 0;
+}
+
+.pay-form {
+  margin-top: 20px;
+}
+
+.pay-form-group {
+  margin-bottom: 15px;
+}
+
+.pay-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.pay-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s ease;
+}
+
+.pay-form-group input:focus {
+  border-color: #2562f0;
+  outline: none;
+}
+
+.pay-form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.pay-payment-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7f8db0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.pay-payment-button:hover {
+  background-color: #2e3d61;
+}
+
+
+
+
+
+
+
+
+/* Body class with a prefix */
+.pay-body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Modal overlay */
+.pay-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure the modal is above other content */
+}
+
+/* Modal content */
+.pay-modal {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1001; /* Ensure the modal content is above the overlay */
+}
+
+/* Modal title */
+.pay-modal-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* QR Code styling */
+.pay-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Close button */
+.pay-modal-close-button {
+  background: #7f8db0;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Pay form styles */
+.pay-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Ensure there is spacing inside the form */
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.pay-form-group {
+  margin-bottom: 15px;
+}
+
+.pay-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.pay-form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.pay-form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay-form-row .pay-form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.pay-form-row .pay-form-group:last-child {
+  margin-right: 0;
+}
+
+.pay-payment-button {
+  background: #7f8db0;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+

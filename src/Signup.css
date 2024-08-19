@@ -1,0 +1,143 @@
+/*Start Global Style*/
+* {
+    box-sizing: border-box;
+    /* font-family:  sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+.im-bg-container {
+    background: #e9ebee;
+    background-image: url(../public/unsplashreg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/* Updated container class name */
+.im-content-wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    height: 100%;
+}
+
+/* Updated class names */
+.im-user-form, .im-intro-section {
+    width: 50%;
+}
+
+/*Start Registration Form Style*/
+.im-user-form {
+    float: left;
+    background-color: #fafafa;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    padding-top: 100px;
+}
+.im-user-form h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.im-input-email, .im-input-password {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+.im-input-checkbox {
+    float: left;
+    margin-left: 55px;
+}
+.im-user-form .im-checkbox-label {
+    float: left;
+    padding-left: 60px;
+}
+.im-user-form a {
+    float: right;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+}
+.im-user-form a:hover {
+    color: #2d394b;
+    font-weight: bold;
+}
+.im-user-form button {
+    width: 80%;
+    margin: 20px 0;
+    padding: 10px;
+    border: none;
+    background-color: #2d394b;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.im-user-form button:hover {
+    width: 80%;
+    font-size: 22px;
+    border-radius: 5px;
+}
+.im-user-form hr {
+    width: 30%;
+    display: inline-block;
+}
+.im-user-form p {
+    display: inline-block;
+    margin: 0px 10px 30px;
+}
+.im-user-form ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+.im-user-form ul li {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.im-user-form ul li:hover {
+    opacity: 0.6;
+}
+.im-user-form ul li:last-child {
+    margin-right: 0;
+}
+.im-user-form .im-legal-info {
+    display: inline-block;
+    float: none;
+}
+
+
+/*Start Welcome Section Style*/
+/* .im-intro-section {
+    float: right;
+    height: 100%;
+    color: #2d394b;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    padding: 100px 0;
+}
+.im-intro-section h2 {
+    margin: 30px 0;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+.im-intro-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.im-intro-section button:hover {
+    color: #1d232c;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.im-li i {
+    padding: 10px;
+} */
